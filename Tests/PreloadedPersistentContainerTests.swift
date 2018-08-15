@@ -1,15 +1,15 @@
 //
-//  PreloadedPersistentContainer_macOSTests.swift
-//  PreloadedPersistentContainer macOSTests
+//  PreloadedPersistentContainerTests.swift
+//  PreloadedPersistentContainerTests
 //
 //  Created by Ryosuke Iwanaga on 2018-08-14.
 //  Copyright © 2018 Ryosuke Iwanaga. All rights reserved.
 //
 
 import XCTest
-@testable import PreloadedPersistentContainer_macOS
+@testable import PreloadedPersistentContainer
 
-class PreloadedPersistentContainer_macOSTests: XCTestCase {
+class PreloadedPersistentContainerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

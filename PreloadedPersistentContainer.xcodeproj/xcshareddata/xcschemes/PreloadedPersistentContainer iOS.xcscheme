@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9BFA63EF2123EB5200EA4114"
-               BuildableName = "PreloadedPersistentContainer_iOS.framework"
+               BuildableName = "PreloadedPersistentContainer.framework"
                BlueprintName = "PreloadedPersistentContainer iOS"
                ReferencedContainer = "container:PreloadedPersistentContainer.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9BFA63F72123EB5200EA4114"
-               BuildableName = "PreloadedPersistentContainer iOSTests.xctest"
+               BuildableName = "PreloadedPersistentContainerTests.xctest"
                BlueprintName = "PreloadedPersistentContainer iOSTests"
                ReferencedContainer = "container:PreloadedPersistentContainer.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BFA63EF2123EB5200EA4114"
-            BuildableName = "PreloadedPersistentContainer_iOS.framework"
+            BuildableName = "PreloadedPersistentContainer.framework"
             BlueprintName = "PreloadedPersistentContainer iOS"
             ReferencedContainer = "container:PreloadedPersistentContainer.xcodeproj">
          </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BFA63EF2123EB5200EA4114"
-            BuildableName = "PreloadedPersistentContainer_iOS.framework"
+            BuildableName = "PreloadedPersistentContainer.framework"
             BlueprintName = "PreloadedPersistentContainer iOS"
             ReferencedContainer = "container:PreloadedPersistentContainer.xcodeproj">
          </BuildableReference>
@@ -83,7 +83,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9BFA63EF2123EB5200EA4114"
-            BuildableName = "PreloadedPersistentContainer_iOS.framework"
+            BuildableName = "PreloadedPersistentContainer.framework"
             BlueprintName = "PreloadedPersistentContainer iOS"
             ReferencedContainer = "container:PreloadedPersistentContainer.xcodeproj">
          </BuildableReference>
