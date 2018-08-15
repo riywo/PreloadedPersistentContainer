@@ -13,6 +13,15 @@
 		9BFA642B2123F0DA00EA4114 /* PreloadedPersistentContainer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9BFA64282123F0D900EA4114 /* PreloadedPersistentContainer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BFA64312123F0E900EA4114 /* PreloadedPersistentContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA642F2123F0E900EA4114 /* PreloadedPersistentContainerTests.swift */; };
 		9BFA64322123F0E900EA4114 /* PreloadedPersistentContainerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA642F2123F0E900EA4114 /* PreloadedPersistentContainerTests.swift */; };
+		9BFA64392123F4B600EA4114 /* NSPersistentContainer+Preload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA64382123F4B600EA4114 /* NSPersistentContainer+Preload.swift */; };
+		9BFA643A2123F4B600EA4114 /* NSPersistentContainer+Preload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA64382123F4B600EA4114 /* NSPersistentContainer+Preload.swift */; };
+		9BFA643D2123F67500EA4114 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA643B2123F67500EA4114 /* TestModel.xcdatamodeld */; };
+		9BFA643E2123F67500EA4114 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA643B2123F67500EA4114 /* TestModel.xcdatamodeld */; };
+		9BFA64402123F9E700EA4114 /* TestPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA643F2123F9E700EA4114 /* TestPreload.swift */; };
+		9BFA64412123F9E700EA4114 /* TestPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA643F2123F9E700EA4114 /* TestPreload.swift */; };
+		9BFA64492124144000EA4114 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA64482124144000EA4114 /* main.swift */; };
+		9BFA644E2124162100EA4114 /* TestModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA643B2123F67500EA4114 /* TestModel.xcdatamodeld */; };
+		9BFA644F2124162500EA4114 /* TestPreload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BFA643F2123F9E700EA4114 /* TestPreload.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +41,18 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		9BFA64442124144000EA4114 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		9BFA63F02123EB5200EA4114 /* PreloadedPersistentContainer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PreloadedPersistentContainer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BFA63F82123EB5200EA4114 /* PreloadedPersistentContainerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PreloadedPersistentContainerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +62,11 @@
 		9BFA64292123F0D900EA4114 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BFA642F2123F0E900EA4114 /* PreloadedPersistentContainerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreloadedPersistentContainerTests.swift; sourceTree = "<group>"; };
 		9BFA64302123F0E900EA4114 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BFA64382123F4B600EA4114 /* NSPersistentContainer+Preload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSPersistentContainer+Preload.swift"; sourceTree = "<group>"; };
+		9BFA643C2123F67500EA4114 /* TestModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestModel.xcdatamodel; sourceTree = "<group>"; };
+		9BFA643F2123F9E700EA4114 /* TestPreload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestPreload.swift; sourceTree = "<group>"; };
+		9BFA64462124144000EA4114 /* TestPreloader */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TestPreloader; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BFA64482124144000EA4114 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +100,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		9BFA64432124144000EA4114 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -93,6 +126,7 @@
 				9BFA63F82123EB5200EA4114 /* PreloadedPersistentContainerTests.xctest */,
 				9BFA640C2123EB6100EA4114 /* PreloadedPersistentContainer.framework */,
 				9BFA64142123EB6200EA4114 /* PreloadedPersistentContainerTests.xctest */,
+				9BFA64462124144000EA4114 /* TestPreloader */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,6 +134,7 @@
 		9BFA64272123F0D900EA4114 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				9BFA64382123F4B600EA4114 /* NSPersistentContainer+Preload.swift */,
 				9BFA64282123F0D900EA4114 /* PreloadedPersistentContainer.h */,
 				9BFA64292123F0D900EA4114 /* Info.plist */,
 			);
@@ -110,9 +145,20 @@
 			isa = PBXGroup;
 			children = (
 				9BFA642F2123F0E900EA4114 /* PreloadedPersistentContainerTests.swift */,
+				9BFA643F2123F9E700EA4114 /* TestPreload.swift */,
+				9BFA643B2123F67500EA4114 /* TestModel.xcdatamodeld */,
+				9BFA64472124144000EA4114 /* TestPreloader */,
 				9BFA64302123F0E900EA4114 /* Info.plist */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		9BFA64472124144000EA4114 /* TestPreloader */ = {
+			isa = PBXGroup;
+			children = (
+				9BFA64482124144000EA4114 /* main.swift */,
+			);
+			path = TestPreloader;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -160,6 +206,7 @@
 			buildConfigurationList = 9BFA64062123EB5200EA4114 /* Build configuration list for PBXNativeTarget "PreloadedPersistentContainer iOSTests" */;
 			buildPhases = (
 				9BFA63F42123EB5200EA4114 /* Sources */,
+				9BFA644D2124153D00EA4114 /* ShellScript */,
 				9BFA63F52123EB5200EA4114 /* Frameworks */,
 				9BFA63F62123EB5200EA4114 /* Resources */,
 			);
@@ -209,6 +256,23 @@
 			productReference = 9BFA64142123EB6200EA4114 /* PreloadedPersistentContainerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		9BFA64452124144000EA4114 /* TestPreloader */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BFA644A2124144000EA4114 /* Build configuration list for PBXNativeTarget "TestPreloader" */;
+			buildPhases = (
+				9BFA64422124144000EA4114 /* Sources */,
+				9BFA64432124144000EA4114 /* Frameworks */,
+				9BFA64442124144000EA4114 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestPreloader;
+			productName = TestPreloader;
+			productReference = 9BFA64462124144000EA4114 /* TestPreloader */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -221,14 +285,19 @@
 				TargetAttributes = {
 					9BFA63EF2123EB5200EA4114 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					9BFA63F72123EB5200EA4114 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 					9BFA640B2123EB6100EA4114 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 					9BFA64132123EB6200EA4114 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					9BFA64452124144000EA4114 = {
 						CreatedOnToolsVersion = 9.4.1;
 					};
 				};
@@ -249,6 +318,7 @@
 				9BFA63F72123EB5200EA4114 /* PreloadedPersistentContainer iOSTests */,
 				9BFA640B2123EB6100EA4114 /* PreloadedPersistentContainer macOS */,
 				9BFA64132123EB6200EA4114 /* PreloadedPersistentContainer macOSTests */,
+				9BFA64452124144000EA4114 /* TestPreloader */,
 			);
 		};
 /* End PBXProject section */
@@ -284,11 +354,28 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9BFA644D2124153D00EA4114 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${BUILT_PRODUCTS_DIR}/../${CONFIGURATION}/TestPreloader";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9BFA63EB2123EB5200EA4114 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFA64392123F4B600EA4114 /* NSPersistentContainer+Preload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,7 +383,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFA64402123F9E700EA4114 /* TestPreload.swift in Sources */,
 				9BFA64312123F0E900EA4114 /* PreloadedPersistentContainerTests.swift in Sources */,
+				9BFA643D2123F67500EA4114 /* TestModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +393,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFA643A2123F4B600EA4114 /* NSPersistentContainer+Preload.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +401,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BFA64412123F9E700EA4114 /* TestPreload.swift in Sources */,
 				9BFA64322123F0E900EA4114 /* PreloadedPersistentContainerTests.swift in Sources */,
+				9BFA643E2123F67500EA4114 /* TestModel.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BFA64422124144000EA4114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BFA644F2124162500EA4114 /* TestPreload.swift in Sources */,
+				9BFA64492124144000EA4114 /* main.swift in Sources */,
+				9BFA644E2124162100EA4114 /* TestModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +556,7 @@
 		9BFA64012123EB5200EA4114 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -471,6 +574,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.riywo.PreloadedPersistentContainer-iOS";
 				PRODUCT_NAME = PreloadedPersistentContainer;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -479,6 +583,7 @@
 		9BFA64022123EB5200EA4114 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -504,6 +609,7 @@
 		9BFA64032123EB5200EA4114 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7WL9W42JR;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -522,6 +628,7 @@
 		9BFA64042123EB5200EA4114 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7WL9W42JR;
 				INFOPLIST_FILE = Tests/Info.plist;
@@ -540,6 +647,7 @@
 		9BFA641E2123EB6200EA4114 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -561,6 +669,7 @@
 				PRODUCT_NAME = PreloadedPersistentContainer;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -568,6 +677,7 @@
 		9BFA641F2123EB6200EA4114 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -596,6 +706,7 @@
 		9BFA64212123EB6200EA4114 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -617,6 +728,7 @@
 		9BFA64222123EB6200EA4114 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -630,6 +742,40 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.riywo.PreloadedPersistentContainer-macOSTests";
 				PRODUCT_NAME = PreloadedPersistentContainerTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		9BFA644B2124144000EA4114 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7WL9W42JR;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+					"@executable_path",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		9BFA644C2124144000EA4114 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Y7WL9W42JR;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+					"@executable_path",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_VERSION = 4.0;
 			};
@@ -683,7 +829,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		9BFA644A2124144000EA4114 /* Build configuration list for PBXNativeTarget "TestPreloader" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BFA644B2124144000EA4114 /* Debug */,
+				9BFA644C2124144000EA4114 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9BFA643B2123F67500EA4114 /* TestModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9BFA643C2123F67500EA4114 /* TestModel.xcdatamodel */,
+			);
+			currentVersion = 9BFA643C2123F67500EA4114 /* TestModel.xcdatamodel */;
+			path = TestModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9BFA63902123E9DF00EA4114 /* Project object */;
 }

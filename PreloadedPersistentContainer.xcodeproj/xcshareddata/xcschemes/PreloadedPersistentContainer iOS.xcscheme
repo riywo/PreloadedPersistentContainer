@@ -3,7 +3,7 @@
    LastUpgradeVersion = "0940"
    version = "1.3">
    <BuildAction
-      parallelizeBuildables = "YES"
+      parallelizeBuildables = "NO"
       buildImplicitDependencies = "YES">
       <BuildActionEntries>
          <BuildActionEntry
@@ -17,6 +17,20 @@
                BlueprintIdentifier = "9BFA63EF2123EB5200EA4114"
                BuildableName = "PreloadedPersistentContainer.framework"
                BlueprintName = "PreloadedPersistentContainer iOS"
+               ReferencedContainer = "container:PreloadedPersistentContainer.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9BFA64452124144000EA4114"
+               BuildableName = "TestPreloader"
+               BlueprintName = "TestPreloader"
                ReferencedContainer = "container:PreloadedPersistentContainer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
