@@ -701,6 +701,7 @@
 				PRODUCT_NAME = PreloadedPersistentContainer;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
