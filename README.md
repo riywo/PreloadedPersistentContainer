@@ -62,7 +62,20 @@ Open Buid Phases of your iOS App target -> Add Run script -> Move it after Compi
 ${BUILT_PRODUCTS_DIR}/../${CONFIGURATION}/YourMacOSCLI
 ```
 
-### 6. Write preload functions in macOS CLI.
+### 6. Edit macOS CLI's Build Settings to link libraries
+
+Framework with CLI is tricky. It requires additional steps to load Framework. See [How to add a dynamic Swift framework to a Command Line Tool](https://medium.com/livefront/how-to-add-a-dynamic-swift-framework-to-a-command-line-tool-bab6426d6c31)
+
+In summary, because Swift stdlibs are already embedded in macOS Framework, you only need to do the steps below:
+
+- Add `Runpath Search Paths`
+    - `$(PROJECT_DIR)/Carthage/Build/Mac/` (to find Framework itself)
+    - `$(PROJECT_DIR)/Carthage/Build/Mac/PreloadedPersistentContainer.framework/Versions/Current/Frameworks` (to find Swift stdlibs)
+- Add `User-Defined` to dynamically link Swift stdlibs
+    - `SWIFT_FORCE_DYNAMIC_LINK_STDLIB` = `YES`
+    - `SWIFT_FORCE_STATIC_LINK_STDLIB` = `NO`
+
+### 7. Write preload functions in macOS CLI.
 
 If this CLI runs on build phase of iOS App, it preloads SQLite files in you iOS App main bundle (`Your.app/YourModel.sqlite*`).
 
@@ -82,7 +95,7 @@ entity.id = 1
 try! container.viewContext.save()
 ```
 
-### 7. Use `loadPersistentStoresWithPreload()` in your iOS App.
+### 8. Use `loadPersistentStoresWithPreload()` in your iOS App.
 
 Maybe in AppDelegate.swift, replace `loadPersistentStores()` with `loadPersistentStoresWithPreload()`.
 
@@ -104,7 +117,7 @@ lazy var persistentContainer: NSPersistentContainer = {
 }()
 ```
 
-### 8. Build iOS App.
+### 9. Build iOS App.
 
 Have fun!
 
@@ -113,6 +126,6 @@ Have fun!
 - [Creating Swift frameworks for iOS, OS X and tvOS with Unit Tests and Distributing via CocoaPods and Swift Package Manager](https://www.enekoalonso.com/articles/creating-swift-frameworks-for-ios-osx-and-tvos)
 - [Core Data: How to Preload Data and Use Existing SQLite Database](https://appcoda.com/core-data-preload-sqlite-database/)
 - [Core Data: Automate master data preloading \- The Cookbook](https://tundrax.github.io/blog/2013/05/06/core-data-automate-master-data-preloading/)
-
+- [How to add a dynamic Swift framework to a Command Line Tool](https://medium.com/livefront/how-to-add-a-dynamic-swift-framework-to-a-command-line-tool-bab6426d6c31)
 
 
