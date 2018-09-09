@@ -33,7 +33,11 @@ extension NSPersistentContainer {
         completionHandler block: @escaping (NSPersistentStoreDescription, Error?) -> Void)
     {
         let storeUrl = _baseUrl(mainBundle).appendingPathComponent(name).appendingPathExtension("sqlite")
-        persistentStoreDescriptions = [NSPersistentStoreDescription(url: storeUrl)]
+        let storeDescription = NSPersistentStoreDescription(url: storeUrl)
+        #if os(iOS)
+        storeDescription.setOption(NSNumber(value: true), forKey: NSReadOnlyPersistentStoreOption)
+        #endif
+        persistentStoreDescriptions = [storeDescription]
         loadPersistentStores(completionHandler: block)
     }
     
